@@ -4,7 +4,7 @@
 ###### This script will filter the given list of numbers and prints only the list of even numbers #######
 #########################################################################################################
 
-def filter_even_numbers(random_list,even_list):
+def filter_even_numbers():
     for num in random_list:
         if (num % 2 == 0) :
             even_list.append(num)
