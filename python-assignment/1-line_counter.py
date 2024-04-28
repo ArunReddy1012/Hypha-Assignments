@@ -8,7 +8,7 @@ def line_count(filename):
         with open(filename, 'r') as file:
             lines=sum(1 for line in file)
         return lines
-    except Filenotfounderror:
+    except FileNotFoundError:
         print("The mentioned file {filename} is missing!!!")
         sys.exit(1)
 
