@@ -7,7 +7,7 @@ def division_function(a,b):
       return c
    except ValueError:
       print("The entered value is not of number, please make a valid entry")
-    except ZeroDivisionError:
+   except ZeroDivisionError:
       print("You are trying to divide a number with 0, which is incorrect!!")    
 
 def main():
