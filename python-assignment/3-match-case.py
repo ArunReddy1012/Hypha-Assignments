@@ -17,7 +17,7 @@ def process_function(choice):
             print("Please make a valid choice")
 
 def main():
-    user_input=print("Enter the choice (1.START , 2.STOP , 3.EXIT):")
+    user_input=input("Enter the choice (1.START , 2.STOP , 3.EXIT):")
     A=process_function(user_input)
 
 main()
