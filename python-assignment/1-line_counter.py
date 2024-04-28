@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import sys
 
 def line_count(filename):
 #write the code for line_count function here
@@ -15,7 +16,7 @@ def line_count(filename):
 
 def main():
 #write code for main 
-    filename=sys.argv[0]
+    filename=sys.argv[1]
     line_count_value=line_count(filename)
     print("Total no. of line in {filename} are : " + str(line_count_value))
 
