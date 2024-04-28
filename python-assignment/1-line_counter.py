@@ -9,13 +9,13 @@ def line_count(filename):
             lines=sum(1 for line in file)
         return lines
     except FileNotFoundError:
-        print("The mentioned file {filename} is missing!!!")
+        print(f"The mentioned file {filename} is missing!!!")
         sys.exit(1)
 
 def main():
 #write code for main 
     filename=sys.argv[1]
     line_count_value=line_count(filename)
-    print("Total no. of line in {filename} are : " + str(line_count_value))
+    print(f"Total no. of line in {filename} are : " + str(line_count_value))
 
 main()
