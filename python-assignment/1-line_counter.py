@@ -6,10 +6,8 @@ def line_count(filename):
 #write the code for line_count function here
     try:
         with open(filename, 'r') as file:
-            readlines=file.readlines()
-            print(readlines)
-            lines=len(file.readlines())
-            return lines
+            lines=sum(1 for line in file)
+        return lines
     except Filenotfounderror:
         print("The mentioned file {filename} is missing!!!")
         sys.exit(1)
