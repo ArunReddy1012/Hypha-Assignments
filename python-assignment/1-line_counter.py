@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 
+#########################################################################################################
+###### This script will take the filename as arg and print the total number of lines in that file #######
+#########################################################################################################
 import sys
 
 def line_count(filename):
