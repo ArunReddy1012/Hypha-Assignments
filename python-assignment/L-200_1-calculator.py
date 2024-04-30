@@ -44,8 +44,8 @@ def switchcase(choice,a,b):
     
 def main():
 
-    a=float(input("Enter the value of a : "))
-    b=float(input("Enter the value of b : "))
+    a=float(input("Enter the value of num1 : "))
+    b=float(input("Enter the value of num2 : "))
 
     print("Enter the number of your choice from the below operations :\n")
     print("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division")
