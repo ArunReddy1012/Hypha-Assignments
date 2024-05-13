@@ -18,7 +18,7 @@ def line_count(filename):
 
 def main():
 #write code for main 
-    filename=sys.argv[1]
+    filename=sys.argv[1]    #### pass the filename as argument while running the script
     line_count_value=line_count(filename)
     print(f"Total no. of line in {filename} are : " + str(line_count_value))
 

@@ -6,7 +6,7 @@ freespace() {
         free_space=$(df -B1 $dir | awk 'NR==2 {print $4}')
         free_space_val=$(( free_space / 1024**3 ))
         echo " The free disk space is : $free_space_val GB"
-        sleep 10
+        sleep 3
     done
 
 }

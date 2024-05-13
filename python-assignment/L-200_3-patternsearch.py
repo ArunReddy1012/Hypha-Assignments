@@ -2,8 +2,6 @@
 ######################## This script will perfom pattern searching in files #############################
 #####################################    Author : Arun Reddy       ######################################
 #########################################################################################################
-
-
 import os
 
 def search_string_in_files(directory, search_string):
@@ -24,7 +22,7 @@ def search_string_in_files(directory, search_string):
         print(f"Error accessing directory '{directory}': {e}")
 
 def main():
-    directory = input("Enter the directory path: ")    #/home/arun/file1.txt
+    directory = input("Enter the directory path: ")    #/home/arun/
     search_string = input("Enter the string to search: ")
 
     search_string_in_files(directory, search_string)

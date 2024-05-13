@@ -15,8 +15,8 @@ def division_function(a,b):
       print("You are trying to divide a number with 0, which is incorrect!!")    
 
 def main():
-   a=float(input("Enter the value of a")) 
-   b=float(input("Enter the value of b")) 
+   a=float(input("Enter the value of a : ")) 
+   b=float(input("Enter the value of b : ")) 
    result=division_function(a,b)
    print(f"{a}/{b} is : ",result)
 
