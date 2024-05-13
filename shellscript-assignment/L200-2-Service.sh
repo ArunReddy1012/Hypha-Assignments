@@ -32,6 +32,6 @@ restart() {
     done
 }
 
-list_services=(httpd nginx)
+list_services=(httpd , nginx)
 
 restart
