@@ -23,12 +23,14 @@ restart_service() {
 restart() {
     while true; do 
         for service in "${list_services[@]}"; do 
-            if ! check_status "$service"; then
+            if check_status "$service"; then
+                echo "$service service is running fine."
+            else
                 log_message "$service service is down, restarting......."
                 restart_service "$service"
             fi
         done
-        sleep 30
+        sleep 3
     done
 }
 
