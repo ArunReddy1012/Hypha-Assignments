@@ -13,7 +13,7 @@ audit_useraccounts(){
 audit_filepermissions(){
     echo "Audil File Permissions : "
     echo "===================================="
-    directories=("/var", "/etc")
+    directories=("/etc", "/tmp")
     for dir in $directories ; do
         echo "Directory : $dir "
         find $dir -type f -perm -o+w -exec ls -l {} +
