@@ -6,7 +6,7 @@ echo "Audit User Account : "
 echo "==================================="
 users=$(cat /etc/passwd)
 echo "List of users : "
-echo "$users | awk -F: '{print "User : " ,$1, "Last Login : ", $6 }'"
+echo $users | awk -F: '{print "User : " ,$1, "Last Login : ", $6 }'
 
 }
 
@@ -17,7 +17,7 @@ echo "$users | awk -F: '{print "User : " ,$1, "Last Login : ", $6 }'"
 main(){
 
     audit_useraccounts
-    audit_filepermissions
+    #audit_filepermissions
 
 }
 
