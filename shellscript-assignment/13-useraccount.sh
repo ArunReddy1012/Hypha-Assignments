@@ -10,9 +10,9 @@ echo "$users | awk -F: '{print "User : " ,$1, "Last Login : ", $6 }'"
 
 }
 
-audit_filepermissi(){
-
-}
+#audit_filepermissi(){
+#
+#}
 
 main(){
 
