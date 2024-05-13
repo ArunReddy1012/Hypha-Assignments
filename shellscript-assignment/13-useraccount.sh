@@ -16,11 +16,13 @@ audit_filepermissions(){
     directories=("/var", "/etc")
     for dir in ${directories[@]} ; do
         echo "Directory : $dir "
-        find $dir -type f -perm -o+w -exec ls -l {} +
+        if [[ -d "$dir" ]]; then
+            find "$dir" -type f -perm -o+w -exec ls -l {} +
+        else
+            echo "Directory $dir does not exist."
+        fi
         echo 
     done 
-
-
 }
 
 main(){
