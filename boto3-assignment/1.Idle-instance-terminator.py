@@ -68,13 +68,13 @@ def identify_low_utilization(Pass-the-arguments-here) :
 
 def snapshot_and_termination(instance_ids,create_snapshot=True):
 
-    volumeids = []
-    response = ec2_client.describe_instances()
-    for reservation in response['Reservations']:
-	for instance in reservation['Instances']:
-		for block in instance['BlockDeviceMappings']:
-			volumeid = block['Ebs']['VolumeId']
-			volumeids.append(volumeid)
+    # volumeids = []
+    # response = ec2_client.describe_instances()
+    # for reservation in response['Reservations']:
+	# for instance in reservation['Instances']:
+	# 	for block in instance['BlockDeviceMappings']:
+	# 		volumeid = block['Ebs']['VolumeId']
+	# 		volumeids.append(volumeid)
 
     for instance_id in instance_ids:
         print(f"Now Processing Instance : {instance}")
